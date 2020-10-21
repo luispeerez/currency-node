@@ -1,6 +1,6 @@
 ### Exchange rate API
 
-This app implements some sample endpoints and two endpoints to convert a given amount from a currency to anoher given certain amount, and to get the exchange rate of a given currency compared to a list of available currencies.
+This app implements some sample endpoints and two endpoints to convert a given amount from a currency to anoher, and to get the exchange rate of a given currency compared to a list of available currencies.
 Examples:
 
 ```
