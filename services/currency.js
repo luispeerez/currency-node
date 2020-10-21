@@ -19,6 +19,16 @@ const getExchangeRate = async (from, to) => {
   return data.rates[from];
 };
 
+const getAllExchangeRates = async (from) => {
+  const response = await fetch(`${baseUrl}/latest?base=${from}`);
+  const data = await response.json();
+  const items = {};
+  for (let key of Object.keys(data.rates)) {
+    items[key] = 1 / data.rates[key];
+  }
+  return items;
+};
+
 const convertAmount = async (amount, from, to) => {
   const rate = await getExchangeRate(from, to);
   return rate * amount;
@@ -26,4 +36,5 @@ const convertAmount = async (amount, from, to) => {
 
 module.exports = {
   convertAmount,
+  getAllExchangeRates,
 };

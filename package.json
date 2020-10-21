@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest"
+    "test": "NODE_ENV=test jest index.test.js"
   },
   "repository": {
     "type": "git",
@@ -24,11 +24,13 @@
   "homepage": "https://github.com/luispeerez/currency-node#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "jest": "^26.6.0",
-    "node-fetch": "^2.6.1",
-    "supertest": "^5.0.0"
+    "node-fetch": "^2.6.1"
   },
   "engines": {
     "node": ">=12.8.3"
+  },
+  "devDependencies": {
+    "jest": "^26.6.0",
+    "supertest": "^5.0.0"
   }
 }
