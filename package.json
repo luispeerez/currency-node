@@ -1,0 +1,29 @@
+{
+  "name": "currency-node",
+  "version": "1.0.0",
+  "description": "A sample node API",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luispeerez/currency-node.git"
+  },
+  "keywords": [
+    "currencies",
+    "node",
+    "express"
+  ],
+  "author": "Luis Perez Bautista",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luispeerez/currency-node/issues"
+  },
+  "homepage": "https://github.com/luispeerez/currency-node#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^26.6.0",
+    "supertest": "^5.0.0"
+  }
+}
